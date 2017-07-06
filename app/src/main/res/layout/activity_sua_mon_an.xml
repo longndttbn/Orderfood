@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.kane.orderfood.Activity.ThemThucDonActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/size10dp"
+        android:text="@string/suamonan"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/size20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size10dp"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edt_suaTenMonAn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size30dp"
+                android:ellipsize="end"
+                android:hint="@string/tenmonan"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/edt_suaGiaTien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/giatien"
+                android:numeric="decimal"
+                android:singleLine="true" />
+
+            <Spinner
+                android:id="@+id/spn_sualoaithucdon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/size10dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imv_suathucdon"
+                android:layout_width="@dimen/size190dp"
+                android:layout_height="@dimen/size100dp"
+                android:src="@drawable/duiga"
+                app:riv_border_width="2dip"
+                app:riv_corner_radius="30dip" />
+
+            <Button
+                android:id="@+id/btn_suathemloaithucdon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size5dp"
+                android:background="@color/colorBorderImage"
+                android:text="@string/themloaithucdon" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_suamonan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorDongY"
+            android:text="@string/suamonan" />
+
+        <Button
+            android:id="@+id/btn_suahuymonan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size10dp"
+            android:layout_weight="1"
+            android:background="@color/colorHuy"
+            android:text="@string/huy" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.kane.orderfood.Activity.ThanhToanActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/size5dp"
+        android:background="@color/colorBackgroundDangNhap">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tenmonan"
+            android:textSize="@dimen/size20sp"
+            android:textStyle="italic|bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/soluong"
+            android:textStyle="italic|bold"
+            android:textSize="@dimen/size20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/giatien"
+            android:textStyle="italic|bold"
+            android:textSize="@dimen/size20sp"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvHienThiMonAn"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/size5dp"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tongtien"
+            android:textStyle="italic|bold"
+            android:textColor="@color/colorTongTien"
+            android:layout_marginTop="@dimen/size10dp"
+            android:layout_marginLeft="@dimen/size5dp"
+            android:textSize="@dimen/size20sp"
+            />
+
+        <TextView
+            android:id="@+id/txtv_tongtien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic|bold"
+            android:text="100.000"
+            android:textColor="@color/colorSoTien"
+            android:layout_marginTop="@dimen/size10dp"
+            android:layout_marginLeft="@dimen/size5dp"
+            android:textSize="@dimen/size20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/size5dp">
+
+        <Button
+            android:id="@+id/btn_thanhtoan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/thanhtoan"
+            android:background="@color/colorBorderImage"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/size5dp"/>
+
+        <Button
+            android:id="@+id/btn_huyThanhtoan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/huy"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/size5dp"
+            android:background="@color/colorHuy"/>
+    </LinearLayout>
+</LinearLayout>

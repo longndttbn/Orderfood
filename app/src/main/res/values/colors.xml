@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorHint">#FFBEBEBE</color>
+    <color name="colorDongY">#ff0004</color>
+    <color name="colorThoat">#ffc800</color>
+    <color name="colorBackgroundDangNhap">#00E676</color>
+    <color name="colorBackgroundEdit">#FAFAFA</color>
+    <color name="colorBackgroundButtonDangNhap">#FF3D00</color>
+    <color name="colorDangKy">#FFFF8D</color>
+    <color name="colorBorderImage">#FF00FF1E</color>
+    <color name="colorBackgroundToolbar">#fd6464</color>
+    <color name="colorWhiteFragment">#FFFAF5F5</color>
+    <color name="colorHuy">#FFF9E002</color>
+    <color name="colorButtonTenLoai">#99adf4e7</color>
+    <color name="colorTongTien">#ff0313</color>
+    <color name="colorSoTien">#FFFF7B00</color>
+    <color name="colorBlack">#FF000000</color>
+</resources>

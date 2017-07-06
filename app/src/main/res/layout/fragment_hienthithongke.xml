@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size5dp"
+        android:background="@color/colorBackgroundDangNhap"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tennhanvien"
+            android:textSize="@dimen/size15sp"
+            android:textStyle="italic|bold"
+            android:layout_marginLeft="@dimen/size10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tongtien"
+            android:textSize="@dimen/size15sp"
+            android:textStyle="italic|bold"
+            android:layout_marginLeft="@dimen/size30dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ngaythanhtoan"
+            android:textSize="@dimen/size15sp"
+            android:textStyle="italic|bold"
+            android:layout_marginLeft="@dimen/size30dp"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_dsthongke"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/size10dp">
+
+    <TextView
+        android:id="@+id/txtv_tenbanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ten ban an"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        />
+
+    <ImageView
+        android:id="@+id/imBanAn"
+        android:layout_width="@dimen/size100dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/banan"
+        android:layout_below="@+id/txtv_tenbanan"/>
+    <ImageButton
+        android:id="@+id/imGoiMon"
+        android:layout_width="@dimen/size30dp"
+        android:layout_height="@dimen/size30dp"
+        android:layout_below="@+id/imBanAn"
+        android:src="@drawable/goimon"
+        android:layout_marginRight="@dimen/size5dp"
+        android:visibility="invisible"
+        />
+    <ImageButton
+        android:id="@+id/imThanhToan"
+        android:layout_width="@dimen/size30dp"
+        android:layout_height="@dimen/size30dp"
+        android:layout_below="@+id/imBanAn"
+        android:layout_toRightOf="@+id/imGoiMon"
+        android:src="@drawable/thanhtoan"
+        android:layout_marginRight="@dimen/size5dp"
+        android:visibility="invisible"
+        />
+
+    <ImageButton
+        android:id="@+id/imAnButton"
+        android:layout_width="@dimen/size30dp"
+        android:layout_height="@dimen/size30dp"
+        android:layout_below="@+id/imBanAn"
+        android:layout_toRightOf="@+id/imThanhToan"
+        android:src="@drawable/done"
+        android:visibility="invisible"/>
+</RelativeLayout>

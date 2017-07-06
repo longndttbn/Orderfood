@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imv_loaimonan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/thitga"
+        android:layout_marginBottom="@dimen/size10dp"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size30dp"
+        android:background="@color/colorButtonTenLoai"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/size10dp">
+
+        <TextView
+            android:id="@+id/txtv_tenloaimonan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/tenloaimonan"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/size20sp"
+            android:textColor="@color/colorPrimary"
+            />
+
+    </FrameLayout>
+</FrameLayout>

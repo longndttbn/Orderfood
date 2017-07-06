@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_margin="@dimen/size5dp"
+    android:layout_marginBottom="@dimen/size5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imv_nhanvien"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:src="@drawable/kitchen_staff"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/colorBorderImage"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/size10dp"
+        android:layout_marginBottom="@dimen/size10dp"
+        android:layout_marginTop="@dimen/size10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/size10dp"
+        android:layout_marginBottom="@dimen/size10dp"
+        android:layout_marginTop="@dimen/size10dp">
+
+        <TextView
+            android:id="@+id/txtv_tennv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ten nhan vien"
+            android:layout_marginBottom="@dimen/size10dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/txtv_gioitinhnv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size10dp"
+            android:text="gioi tinh"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/txtv_cmnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CMTND"
+            android:textStyle="italic"/>
+    </LinearLayout>
+</LinearLayout>

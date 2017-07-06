@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imv_monan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/thitga"
+        android:layout_marginBottom="@dimen/size10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size70dp"
+        android:background="@color/colorButtonTenLoai"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/size10dp"
+        >
+
+        <TextView
+            android:id="@+id/txtv_tenmonan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tenloaimonan"
+            android:gravity="center|left"
+            android:textStyle="bold"
+            android:textSize="@dimen/size30sp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/txtv_giatien"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:text="@string/giatien"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/size20sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+</FrameLayout>

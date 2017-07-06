@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundDangNhap"
+    tools:context="com.example.kane.orderfood.Activity.DangNhapActivity">
+
+    <TextView
+        android:id="@+id/txtv_dangnhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lnformdangky"
+        android:layout_centerHorizontal="true"
+        android:text="@string/dangnhap"
+        android:textSize="@dimen/size30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/size100sp"
+        android:textColor="@color/colorPrimary"/>
+
+    <ImageView
+        android:layout_width="@dimen/size150dp"
+        android:layout_height="@dimen/size150dp"
+        android:src="@drawable/chefdangnhap"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/ln_formdangnhap"
+        android:layout_alignEnd="@+id/ln_formdangnhap"
+        android:layout_marginTop="@dimen/size70dp" />
+    <LinearLayout
+        android:id="@+id/ln_formdangnhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/size10dp"
+        android:orientation="vertical"
+        android:padding="@dimen/size10dp">
+
+        <EditText
+            android:id="@+id/edt_tendangnhapDN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackgroundEdit"
+            android:drawableLeft="@drawable/ic_person"
+            android:hint="@string/nhaptendangnhap"
+            android:singleLine="true"
+            android:textColorHint="@color/colorHint" />
+
+        <EditText
+            android:id="@+id/edt_matkhauDN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size10dp"
+            android:background="@color/colorBackgroundEdit"
+            android:drawableLeft="@drawable/ic_lock"
+            android:hint="@string/nhapmatkhau"
+            android:singleLine="true"
+            android:textColorHint="@color/colorHint"
+            android:password="true"/>
+
+        <Button
+            android:id="@+id/btn_dangnhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size10dp"
+            android:background="@color/colorBackgroundButtonDangNhap"
+            android:text="@string/dangnhap"
+            android:textColor="@color/colorBackgroundEdit"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_dangky"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size10dp"
+            android:background="@color/colorDangKy"
+            android:text="@string/dangky"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</RelativeLayout>
